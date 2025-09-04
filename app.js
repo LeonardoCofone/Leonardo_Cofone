@@ -107,10 +107,10 @@ document.addEventListener("DOMContentLoaded", () => {
   initGrid();
   setYear();
 
-  hackingText("hackingNameTitle", 80);
+  hackingText("hackingNameTitle", 100);
 
   if (window.innerWidth >= 1100) {
-    hackingText("hackingNameSubtitle", 5);
+    hackingText("hackingNameSubtitle", 1);
   }
 });
 
