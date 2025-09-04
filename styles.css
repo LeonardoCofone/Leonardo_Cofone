@@ -8,7 +8,7 @@
   --ring: #2b74ff55;
   --tile: #111824;
   --tile-hover: #0f1b2d;
-  --form-title-color: #000000;
+  --form-title-color: #ffffff;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
@@ -23,7 +23,7 @@
     --ring: #335cff33;
     --tile: #f3f6fb;
     --tile-hover: #e8eefb;
-    --form-title-color: #ffffff;
+    --form-title-color: #000000;
     --shadow: 0 8px 24px rgba(2, 12, 27, 0.08);
   }
 }
