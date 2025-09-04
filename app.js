@@ -88,24 +88,22 @@ function hackingText(id, speed = 80) {
   const text = element.textContent;
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|";
   let iterations = 0;
-  let lastTime = 0;
 
-  function animate(time) {
-    if (time - lastTime > speed) {
-      element.textContent = text
-        .split("")
-        .map((letter, index) => {
-          if (index < iterations) return text[index];
-          return letters[Math.floor(Math.random() * letters.length)];
-        })
-        .join("");
+  function animate() {
+    element.textContent = text
+      .split("")
+      .map((letter, index) => {
+        if (index < iterations) return text[index];
+        return letters[Math.floor(Math.random() * letters.length)];
+      })
+      .join("");
 
-      iterations += 1;
-      lastTime = time;
-    }
+    iterations += 0.3;
 
     if (iterations < text.length) {
-      requestAnimationFrame(animate);
+      setTimeout(() => requestAnimationFrame(animate), speed / 3);
+    } else {
+      element.textContent = text;
     }
   }
 
@@ -116,10 +114,11 @@ document.addEventListener("DOMContentLoaded", () => {
   initGrid();
   setYear();
 
-  hackingText("hackingNameTitle", 100);
+  hackingText("hackingNameTitle", 80);
 
   if (window.innerWidth >= 1100) {
     hackingText("hackingNameSubtitle", 20);
   }
 });
+
 
