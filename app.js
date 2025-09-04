@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
   hackingText("hackingNameTitle", 80);
 
   if (window.innerWidth >= 1100) {
-    hackingText("hackingNameSubtitle", 20);
+    hackingText("hackingNameSubtitle", 5);
   }
 });
 
