@@ -79,12 +79,14 @@ body {
 }
 
 #hackingNameSubtitle {
-  display: inline-block;
+  display: block;
   width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  word-wrap: break-word;
 }
+
 
 /* Links section */
 .links-section {
