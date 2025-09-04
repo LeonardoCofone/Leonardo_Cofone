@@ -64,8 +64,6 @@ function createTile({ label, url, subtitle }) {
   return a;
 }
 
-
-
 function initGrid() {
   const grid = document.getElementById('linksGrid');
   links.forEach(link => grid.appendChild(createTile(link)));
@@ -75,11 +73,6 @@ function setYear() {
   const y = document.getElementById('year');
   y.textContent = new Date().getFullYear();
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  initGrid();
-  setYear();
-});
 
 function hackingText(id, speed = 80) {
   const element = document.getElementById(id);
