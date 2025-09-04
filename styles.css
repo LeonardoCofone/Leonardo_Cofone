@@ -348,11 +348,10 @@ form button[type='submit']:focus-visible {
   }
 
   #hackingNameSubtitle {
-    white-space: normal; /* consente il wrap */
-    overflow: visible;
-    text-overflow: unset;
-    word-wrap: break-word;
-    text-align: center; /* opzionale, per centrare il testo */
+    display: block; 
+    white-space: normal;  
+    overflow: visible;    
+    text-overflow: unset; 
   }
 }
 
