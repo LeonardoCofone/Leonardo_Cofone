@@ -79,13 +79,13 @@ body {
 }
 
 #hackingNameSubtitle {
-  display: block;
+  display: inline-block;
   width: 100%;
-  white-space: normal;
-  overflow: visible;
-  text-overflow: unset;
-  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 
 /* Links section */
@@ -339,12 +339,20 @@ form button[type='submit']:focus-visible {
 /* Media Queries for Responsiveness */
 
 /* Tablets and larger phones (e.g., landscape mode) */
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .page {
     padding: 28px 18px 40px;
   }
   .grid {
     grid-template-columns: 1fr 1fr; /* Keep two columns for tablets */
+  }
+
+  #hackingNameSubtitle {
+    white-space: normal; /* consente il wrap */
+    overflow: visible;
+    text-overflow: unset;
+    word-wrap: break-word;
+    text-align: center; /* opzionale, per centrare il testo */
   }
 }
 
@@ -448,6 +456,7 @@ form button[type='submit']:focus-visible {
   .footer {
     font-size: 0.8rem; /* Smaller footer text */
   }
+  
 }
 
 /* Even smaller screens (e.g., older phones, very narrow viewports) */
