@@ -82,13 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function hackingText(id, speed = 80) {
-  if (window.innerWidth < 1100) return;
-
   const element = document.getElementById(id);
   if (!element) return;
 
   const text = element.textContent;
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|";
   let iterations = 0;
   let lastTime = 0;
 
@@ -114,10 +112,14 @@ function hackingText(id, speed = 80) {
   requestAnimationFrame(animate);
 }
 
-// Avvio animazioni
 document.addEventListener("DOMContentLoaded", () => {
-  hackingText("hackingNameTitle", 80);
-  hackingText("hackingNameSubtitle", 80);
-});
+  initGrid();
+  setYear();
 
+  hackingText("hackingNameTitle", 100);
+
+  if (window.innerWidth >= 1100) {
+    hackingText("hackingNameSubtitle", 20);
+  }
+});
 
