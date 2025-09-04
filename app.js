@@ -82,30 +82,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function hackingText(id, speed = 80) {
+  if (window.innerWidth < 1100) return;
+
   const element = document.getElementById(id);
   if (!element) return;
 
   const text = element.textContent;
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   let iterations = 0;
-  const interval = setInterval(() => {
-    element.textContent = text
-      .split("")
-      .map((letter, index) => {
-        if (index < iterations) return text[index];
-        return letters[Math.floor(Math.random() * letters.length)];
-      })
-      .join("");
+  let lastTime = 0;
 
-    if (iterations >= text.length) clearInterval(interval);
-    iterations += 1 / 3;
-  }, speed);
+  function animate(time) {
+    if (time - lastTime > speed) {
+      element.textContent = text
+        .split("")
+        .map((letter, index) => {
+          if (index < iterations) return text[index];
+          return letters[Math.floor(Math.random() * letters.length)];
+        })
+        .join("");
+
+      iterations += 1;
+      lastTime = time;
+    }
+
+    if (iterations < text.length) {
+      requestAnimationFrame(animate);
+    }
+  }
+
+  requestAnimationFrame(animate);
 }
 
-// Avvia entrambe le animazioni
+// Avvio animazioni
 document.addEventListener("DOMContentLoaded", () => {
-  hackingText("hackingNameTitle");
-  hackingText("hackingNameSubtitle", 0); // puoi cambiare velocità per il sottotitolo
+  hackingText("hackingNameTitle", 80);
+  hackingText("hackingNameSubtitle", 80);
 });
+
 
