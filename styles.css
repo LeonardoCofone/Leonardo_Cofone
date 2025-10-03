@@ -88,7 +88,74 @@ body {
   text-overflow: ellipsis;
 }
 
+    .certifications {
+      margin-top: 3rem;
+      padding: 1rem 0;
+    }
+    
+    .certifications h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .cert-card {
+      background: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(51, 92, 255, 0.15);
+      border-color: #000000;
+    }
+    
+    .cert-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: contain;
+      margin-bottom: 0.75rem;
+      border-radius: 8px;
+    }
+    
+    .cert-card h4 {
+      
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin: 0;
+      line-height: 1.3;
+    }
+    
+.cert-card p {
+  font-size: 0.75rem;
+  color: #2c2d2f;
+  margin: 0.75rem 0 0 0;
+}
 
+.cert-card .desc {
+  margin-top: 0.75rem;
+  font-size: 0.7rem;       /* leggermente più piccolo */
+  color: #5e5f75;          /* grigio più scuro e discreto */
+  font-style: italic;      /* opzionale, per distinguere */
+}
 
 /* Links section */
 .links-section {
@@ -358,6 +425,11 @@ form button[type='submit']:focus-visible {
     white-space: normal;  
     overflow: visible;    
     text-overflow: unset; 
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem; /* leggermente più ampio per schermi piccoli */
   }
 }
 
