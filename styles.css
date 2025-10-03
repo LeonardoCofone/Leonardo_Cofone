@@ -132,8 +132,8 @@ body {
     
     .cert-card:hover {
       transform: translateY(-5px);
-      box-shadow: var(--shadow);
-      border-color: var(--cert); /* o var(--cert) se preferisci */
+      box-shadow: var(--text);
+      border-color: var(--cert); 
     }
     
     .cert-card img {
