@@ -1,4 +1,3 @@
-/* Variables for theming */
 :root {
   --bg: #0b0f14;
   --card: #0f141b;
@@ -16,7 +15,6 @@
   --card_desc: #ddddde;
 }
 
-/* Light theme preference */
 @media (prefers-color-scheme: light) {
   :root {
     --bg: #f7f9fc;
@@ -36,8 +34,6 @@
   }
 }
 
-
-/* Base styles */
 * {
   box-sizing: border-box;
 }
@@ -48,8 +44,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   background: radial-gradient(1200px 700px at 10% -10%, #335cff22, transparent 60%),
     radial-gradient(900px 500px at 90% 10%, #09b6ff22, transparent 60%),
@@ -57,14 +52,12 @@ body {
   min-height: 100dvh;
 }
 
-/* Layout */
 .page {
   max-width: 880px;
   margin: 0 auto;
   padding: 32px 20px 48px;
 }
 
-/* Hero section */
 .hero {
   display: flex;
   align-items: center;
@@ -73,7 +66,7 @@ body {
 }
 
 .headings {
-  flex-grow: 1; /* Allow headings to take available space */
+  flex-grow: 1;
 }
 
 .title {
@@ -97,62 +90,61 @@ body {
   text-overflow: ellipsis;
 }
 
-    .certifications {
-      margin-top: 3rem;
-      padding: 1rem 0;
-    }
-    
-    .certifications h3 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-      color: var(--cert);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 0.5rem;
-      margin-top: 1.5rem;
-    }
-    
-    .cert-card {
-      background: var(--card);
-      border: 2px solid var(--border);
-      border-radius: 12px;
-      padding: 1rem;
-      text-align: center;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      text-decoration: none;
-      display: block;
-    }
-    
-    .cert-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--text);
-      border-color: var(--cert); 
-    }
-    
-    .cert-card img {
-      width: 100%;
-      height: 140px;
-      object-fit: contain;
-      margin-bottom: 0.75rem;
-      border-radius: 8px;
-    }
-    
-    .cert-card h4 {
-      
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--text);
-      margin: 0;
-      line-height: 1.3;
-    }
-    
+.certifications {
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+.certifications h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--cert);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.cert-card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+  border-color: var(--cert);
+}
+
+.cert-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+}
+
+.cert-card h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.3;
+}
+
 .cert-card p {
   font-size: 0.75rem;
   color: var(--card_p);
@@ -161,12 +153,11 @@ body {
 
 .cert-card .desc {
   margin-top: 0.75rem;
-  font-size: 0.7rem;       /* leggermente più piccolo */
-  color: var(--card_desc);          /* grigio più scuro e discreto */
-  font-style: italic;      /* opzionale, per distinguere */
+  font-size: 0.7rem;
+  color: var(--card_desc);
+  font-style: italic;
 }
 
-/* Links section */
 .links-section {
   margin-top: 20px;
 }
@@ -239,7 +230,6 @@ body {
   font-style: italic;
 }
 
-/* About section (Professional Profile) */
 .about {
   margin-top: 28px;
   background: var(--card);
@@ -298,16 +288,15 @@ body {
   flex-direction: column;
   gap: 7px;
   padding-left: 20px;
-  margin: 0; /* Remove default ul margin */
+  margin: 0;
 }
 
 .cv ul li {
   margin-bottom: 7px;
 }
 
-/* Contact Form */
 .contact-form-section {
-  padding-top: 20px; /* Add some space above the form */
+  padding-top: 20px;
 }
 
 form {
@@ -347,8 +336,7 @@ form textarea {
   background: var(--tile);
   color: var(--text);
   font-family: 'Inter', system-ui, sans-serif;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease,
-    background 0.25s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 form input::placeholder,
@@ -397,10 +385,9 @@ form button[type='submit']:focus-visible {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--text); 
+  color: var(--text);
 }
 
-/* Footer */
 .footer {
   text-align: center;
   color: var(--muted);
@@ -408,7 +395,6 @@ form button[type='submit']:focus-visible {
   font-size: 0.85rem;
 }
 
-/* Accessibility */
 .visually-hidden {
   position: absolute !important;
   width: 1px;
@@ -425,21 +411,18 @@ form button[type='submit']:focus-visible {
   .page {
     padding: 28px 18px 40px;
   }
+
   .grid {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
   }
 
   #hackingNameSubtitle {
-    display: block; 
-    white-space: normal;  
-    overflow: visible;    
-    text-overflow: unset; 
+    display: block;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
   }
 
-  .cert-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.75rem; /* leggermente più ampio per schermi piccoli */
-  }
 }
 
 @media (max-width: 800px) {
@@ -452,7 +435,7 @@ form button[type='submit']:focus-visible {
   .title {
     font-size: 24px;
     text-align: center;
-    padding: 10px; 
+    padding: 10px;
   }
 
   .subtitle {
@@ -461,76 +444,72 @@ form button[type='submit']:focus-visible {
   }
 
   .grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
   .tile {
-    padding: 14px; 
+    padding: 14px;
   }
 
   .tile .icon {
-    width: 32px; 
+    width: 32px;
     height: 32px;
   }
 
   .tile .icon img {
-    width: 18px; 
+    width: 18px;
     height: 18px;
   }
 
   .tile .label {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .tile .subtitle {
-    font-size: 11px; /* Adjust subtitle font size */
+    font-size: 11px;
   }
 
   .about {
-    padding: 15px; /* Adjust about section padding */
+    padding: 15px;
   }
 
   .about h2 {
-    font-size: 18px; /* Adjust heading size */
+    font-size: 18px;
   }
 
   .about-text {
-    font-size: 0.95rem; /* Adjust text size */
+    font-size: 0.95rem;
   }
 
   .cv {
-    padding: 12px 14px; /* Adjust CV section padding */
+    padding: 12px 14px;
   }
 
   .cv summary {
-    font-size: 0.95rem; /* Adjust summary font size */
+    font-size: 0.95rem;
   }
 
   .cv-section h3 {
-    font-size: 1rem; /* Adjust CV section heading size */
-  }
-
-  .cv ul li {
-    font-size: 0.9rem; /* Adjust CV list item font size */
+    font-size: 1rem;
   }
 
   form {
-    padding: 1.5rem 1rem; /* Adjust form padding */
+    padding: 1.5rem 1rem;
   }
 
   form label {
-    font-size: 0.9rem; /* Adjust form label font size */
+    font-size: 0.9rem;
   }
 
   form input,
   form textarea {
     font-size: 0.95rem;
     padding: 10px 12px;
-    margin-bottom: 15px; /* Adjust margin */
+    margin-bottom: 15px;
   }
 
   form textarea {
-    min-height: 100px; /* Smaller min-height for textarea */
+    min-height: 100px;
   }
 
   form button[type='submit'] {
@@ -539,13 +518,16 @@ form button[type='submit']:focus-visible {
   }
 
   .footer {
-    font-size: 0.8rem; /* Smaller footer text */
+    font-size: 0.8rem;
   }
-  
 }
 
-/* Even smaller screens (e.g., older phones, very narrow viewports) */
 @media (max-width: 480px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
   .page {
     padding: 20px 15px 30px;
   }
@@ -602,10 +584,6 @@ form button[type='submit']:focus-visible {
 
   .cv-section h3 {
     font-size: 0.95rem;
-  }
-
-  .cv ul li {
-    font-size: 0.85rem;
   }
 
   form {
