@@ -10,6 +10,10 @@
   --tile-hover: #0f1b2d;
   --form-title-color: #000000;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --cert: #ffffff;
+  --border: #000000;
+  --card_p: #ffffff;
+  --card_desc: #ddddde;
 }
 
 /* Light theme preference */
@@ -25,6 +29,10 @@
     --tile-hover: #e8eefb;
     --form-title-color: #ffffff;
     --shadow: 0 8px 24px rgba(2, 12, 27, 0.08);
+    --cert: #000000;
+    --border: #e5e7eb;
+    --card_p: #2c2d2f;
+    --card_desc: #5e5f75;
   }
 }
 
@@ -97,7 +105,7 @@ body {
       font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 2rem;
-      color: #000000;
+      color: var(--cert);
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -110,8 +118,8 @@ body {
     }
     
     .cert-card {
-      background: #fff;
-      border: 2px solid #e5e7eb;
+      background: var(--card);
+      border: 2px solid var(--border);
       border-radius: 12px;
       padding: 1rem;
       text-align: center;
@@ -124,7 +132,7 @@ body {
     .cert-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 25px rgba(51, 92, 255, 0.15);
-      border-color: #000000;
+      border-color: var(--cert);
     }
     
     .cert-card img {
@@ -139,21 +147,21 @@ body {
       
       font-size: 0.9rem;
       font-weight: 600;
-      color: #1f2937;
+      color: var(--text);
       margin: 0;
       line-height: 1.3;
     }
     
 .cert-card p {
   font-size: 0.75rem;
-  color: #2c2d2f;
+  color: var(--card_p);
   margin: 0.75rem 0 0 0;
 }
 
 .cert-card .desc {
   margin-top: 0.75rem;
   font-size: 0.7rem;       /* leggermente più piccolo */
-  color: #5e5f75;          /* grigio più scuro e discreto */
+  color: var(--card_desc);          /* grigio più scuro e discreto */
   font-style: italic;      /* opzionale, per distinguere */
 }
 
