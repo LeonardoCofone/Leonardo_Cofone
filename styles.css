@@ -36,6 +36,7 @@
   }
 }
 
+
 /* Base styles */
 * {
   box-sizing: border-box;
@@ -131,8 +132,8 @@ body {
     
     .cert-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(51, 92, 255, 0.15);
-      border-color: var(--cert);
+      box-shadow: var(--shadow);
+      border-color: var(--cert); /* o var(--cert) se preferisci */
     }
     
     .cert-card img {
