@@ -19,11 +19,6 @@ const links = [
     url: 'https://www.instagram.com/leo.cofonee/', 
     subtitle: 'Personal life' 
   },
-  { 
-    label: 'NeuroVision', 
-    url: 'https://leonardocofone.github.io/NeuroVision/', 
-    subtitle: 'Explor how neural networks learns. Entirely powered by Leonardo Cofone' 
-  },
 ];
 
 function makeHostname(href) {
@@ -42,7 +37,6 @@ const faviconMap = {
   Kaggle: 'images/kaggle.png',
   LinkedIn: 'images/linkedin.png',
   Instagram: 'images/instagram.png',
-  NeuroVision: 'images/neurovision.png'
 };
 
 function createTile({ label, url, subtitle }) {
@@ -113,5 +107,3 @@ document.addEventListener("DOMContentLoaded", () => {
     hackingText("hackingNameSubtitle", 1);
   }
 });
-
-

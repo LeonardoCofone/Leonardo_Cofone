@@ -76,6 +76,134 @@ body {
   letter-spacing: 0.2px;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.project-card {
+  background: var(--card-bg, rgba(255,255,255,0.04));
+  border: 1px solid var(--border, rgba(255,255,255,0.1));
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+  border-color: var(--accent, #335cff);
+  transform: translateY(-2px);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.project-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.06);
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.project-title-block h4 {
+  margin: 0 0 0.15rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text, #000000);
+}
+
+.project-tag {
+  font-size: 0.72rem;
+  color: var(--accent, #335cff);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.project-short {
+  font-size: 0.875rem;
+  color: var(--text-muted, rgba(0, 0, 0, 0.65));
+  margin: 0;
+  line-height: 1.55;
+}
+
+.project-details summary {
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent, #335cff);
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  user-select: none;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details summary::before {
+  content: '▸';
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.project-details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.project-long {
+  font-size: 0.845rem;
+  color: var(--text-muted, rgba(0, 0, 0, 0.6));
+  line-height: 1.65;
+  margin: 0.6rem 0 0;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.project-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.project-btn-live {
+  background: var(--accent, #335cff);
+  color: #fff;
+}
+
+.project-btn-repo {
+  background: rgba(255,255,255,0.08);
+  color: var(--text, #fff);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
 .subtitle {
   margin: 2px 0 0 0;
   color: var(--muted);
