@@ -1,4 +1,4 @@
-# Leonardo Cofone — Personal Website
+# Leonardo Cofone, Personal Website
 
 Welcome to my personal website!  
 I am Leonardo Cofone, a 17-year-old AI developer and researcher and enthusiast, specializing in Machine Learning and Deep Learning.  
@@ -19,9 +19,9 @@ On this website, you can find:
 
 ## Links
 
-- [GitHub](https://github.com/LeonardoCofone) — Code and projects  
-- [Kaggle](https://www.kaggle.com/zlatan599) — Competitions and datasets  
-- [LinkedIn](https://www.linkedin.com/in/leonardo-cofone-914228361/) — Professional profile  
+- [GitHub](https://github.com/LeonardoCofone), Code and projects  
+- [Kaggle](https://www.kaggle.com/zlatan599), Competitions and datasets  
+- [LinkedIn](https://www.linkedin.com/in/leonardo-cofone-914228361/), Professional profile  
 
 ---
 
