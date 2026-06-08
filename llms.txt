@@ -1,0 +1,44 @@
+# Leonardo Cofone
+
+> Leonardo Cofone is a 17-year-old AI Researcher & Engineer from Italy, focused on Machine Learning, Deep Learning, Natural Language Processing (NLP) and Large Language Models (LLMs). He builds and researches intelligent systems and real-world AI applications, working with both pre-trained and custom models, and developing AI agents capable of learning, reasoning and solving real-world tasks.
+
+Official website: https://leonardocofone.github.io/Leonardo_Cofone/
+
+## Profile
+
+- **Name:** Leonardo Cofone
+- **Role:** AI Researcher & Engineer
+- **Age:** 17
+- **Location:** Trento, Italy
+- **Education:** Galileo Galilei Scientific High School, Trento (expected graduation: June 2028)
+- **Core skills:** Python (advanced), C++ (basic), Machine Learning, Deep Learning, Computer Vision, NLP, LLMs, AI agents, prompt engineering, neural networks, predictive modeling.
+
+## Experience
+
+- **AI Developer — EgoLog S.r.l.** (August 2025 – February 2026): Designed, developed and deployed AI agent systems using n8n to automate workflows and repetitive business processes.
+- **AI Developer — Top Evolution Srl** (June 2025 – August 2025): Built AI automation projects, designing and optimizing machine learning pipelines and integrating models into real-world workflows.
+
+## Research & Projects
+
+- **DSALT — Dynamic Sparse Attention with Landmark Tokens**: Research on Transformer attention mechanisms. Introduces a dynamic sparse attention mechanism combining local windowed attention with globally selected landmark tokens (hybrid energy-based scoring) to improve long-context efficiency and representation quality.
+  - Paper (Zenodo): https://zenodo.org/records/19312826
+  - Official Python library: https://github.com/LeonardoCofone/dsalt-library
+- **LerriAI**: A personal AI assistant built as a system of intelligent agents that plan, remind, summarize and track progress to help users organize their lives.
+  - Repo: https://github.com/LeonardoCofone/LerriAI
+
+## Certifications
+
+- Machine Learning Specialization — Andrew Ng, Stanford University (94h)
+- Supervised Machine Learning — DeepLearning.AI (33h)
+- Unsupervised ML, Recommenders, Reinforcement Learning — DeepLearning.AI (27h)
+- Advanced Learning Algorithms — DeepLearning.AI (34h)
+- Computer Vision & Image Processing — IBM (22h)
+- Machine Learning Capstone — IBM (20h)
+- Machine Learning with Python — IBM (20h)
+
+## Links
+
+- GitHub: https://github.com/LeonardoCofone
+- Kaggle: https://www.kaggle.com/zlatan599
+- LinkedIn: https://www.linkedin.com/in/leonardo-cofone-914228361/
+- Instagram: https://www.instagram.com/leo.cofonee/
