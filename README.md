@@ -4,7 +4,7 @@ Welcome to my personal website!
 I am Leonardo Cofone, a 17-year-old AI developer and researcher and enthusiast, specializing in Machine Learning and Deep Learning.  
 
 Check out my website here: [https://leonardocofone.github.io/Leonardo_Cofone/](https://leonardocofone.github.io/Leonardo_Cofone/)
-
+  
 ---
 
 ## About
