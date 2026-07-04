@@ -15,13 +15,13 @@ Official website: https://leonardocofone.github.io/Leonardo_Cofone/
 
 ## Experience
 
-- **Python Developer — Airpim Srl** (June 2026): Designed and built a zero-dependency Python tool for automatic memory leak diagnostics, with adaptive statistical analysis and root-cause localization on the object graph. Validated in production.
-- **AI Developer — EgoLog S.r.l.** (August 2025 – February 2026): Designed, developed and deployed AI agent systems using n8n to automate workflows and repetitive business processes.
-- **AI Developer — Top Evolution Srl** (June 2025 – August 2025): Built AI automation projects, designing and optimizing machine learning pipelines and integrating models into real-world workflows.
+- **Python Developer** – Airpim Srl (June 2026): Designed and built a zero-dependency Python tool for automatic memory leak diagnostics, with adaptive statistical analysis and root-cause localization on the object graph. Validated in production.
+- **AI Developer** – EgoLog S.r.l. (August 2025 – February 2026): Designed, developed and deployed AI agent systems using n8n to automate workflows and repetitive business processes.
+- **AI Developer** – Top Evolution Srl (June 2025 – August 2025): Built AI automation projects, designing and optimizing machine learning pipelines and integrating models into real-world workflows.
 
 ## Research & Projects
 
-- **DSALT — Dynamic Sparse Attention with Landmark Tokens**: Research on Transformer attention mechanisms. Introduces a dynamic sparse attention mechanism combining local windowed attention with globally selected landmark tokens (hybrid energy-based scoring) to improve long-context efficiency and representation quality.
+- **DSALT (Dynamic Sparse Attention with Landmark Tokens)**: Research on Transformer attention mechanisms. Introduces a dynamic sparse attention mechanism combining local windowed attention with globally selected landmark tokens (hybrid energy-based scoring) to improve long-context efficiency and representation quality.
   - Paper (Zenodo): https://zenodo.org/records/19312826
   - Official Python library: https://github.com/LeonardoCofone/dsalt-library
 - **LerriAI**: A personal AI assistant built as a system of intelligent agents that plan, remind, summarize and track progress to help users organize their lives.
@@ -29,13 +29,13 @@ Official website: https://leonardocofone.github.io/Leonardo_Cofone/
 
 ## Certifications
 
-- Machine Learning Specialization — Andrew Ng, Stanford University (94h)
-- Supervised Machine Learning — DeepLearning.AI (33h)
-- Unsupervised ML, Recommenders, Reinforcement Learning — DeepLearning.AI (27h)
-- Advanced Learning Algorithms — DeepLearning.AI (34h)
-- Computer Vision & Image Processing — IBM (22h)
-- Machine Learning Capstone — IBM (20h)
-- Machine Learning with Python — IBM (20h)
+- Machine Learning Specialization - Andrew Ng, Stanford University (94h)
+- Supervised Machine Learning - DeepLearning.AI (33h)
+- Unsupervised ML, Recommenders, Reinforcement Learning - DeepLearning.AI (27h)
+- Advanced Learning Algorithms - DeepLearning.AI (34h)
+- Computer Vision & Image Processing - IBM (22h)
+- Machine Learning Capstone - IBM (20h)
+- Machine Learning with Python - IBM (20h)
 
 ## Links
 

@@ -40,7 +40,7 @@ const faviconMap = {
 };
 
 function createTile({ label, url, subtitle }) {
-  const favicon = faviconMap[label] || 'images/default.png';
+  const favicon = faviconMap[label] || 'images/favicon.png';
   const a = document.createElement('a');
   a.href = url;
   a.target = url.startsWith('#') ? '_self' : '_blank';
@@ -68,9 +68,14 @@ function setYear() {
   y.textContent = new Date().getFullYear();
 }
 
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 function hackingText(id, speed = 80) {
+  if (reducedMotion) return;
+
   const element = document.getElementById(id);
-  if (!element) return;
+  if (!element || element.dataset.animating === 'true') return;
+  element.dataset.animating = 'true';
 
   const text = element.textContent;
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|";
@@ -91,6 +96,7 @@ function hackingText(id, speed = 80) {
       setTimeout(() => requestAnimationFrame(animate), speed / 3);
     } else {
       element.textContent = text;
+      element.dataset.animating = 'false';
     }
   }
 
@@ -105,5 +111,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (window.innerWidth >= 1100) {
     hackingText("hackingNameSubtitle", 1);
+  }
+
+  // Easter egg: click sul nome per rigiocare l'effetto
+  const title = document.getElementById("hackingNameTitle");
+  if (title) {
+    title.style.cursor = "pointer";
+    title.addEventListener("click", () => hackingText("hackingNameTitle", 100));
   }
 });
