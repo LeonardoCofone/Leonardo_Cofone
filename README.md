@@ -22,6 +22,7 @@ On this website, you can find:
 - [GitHub](https://github.com/LeonardoCofone), Code and projects  
 - [Kaggle](https://www.kaggle.com/zlatan599), Competitions and datasets  
 - [LinkedIn](https://www.linkedin.com/in/leonardo-cofone-914228361/), Professional profile  
+- [Instagram](https://www.instagram.com/leo.cofonee/), Personal life  
 
 ---
 

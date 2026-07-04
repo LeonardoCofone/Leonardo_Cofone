@@ -15,6 +15,7 @@ Official website: https://leonardocofone.github.io/Leonardo_Cofone/
 
 ## Experience
 
+- **Python Developer — Airpim Srl** (June 2026): Designed and built a zero-dependency Python tool for automatic memory leak diagnostics, with adaptive statistical analysis and root-cause localization on the object graph. Validated in production.
 - **AI Developer — EgoLog S.r.l.** (August 2025 – February 2026): Designed, developed and deployed AI agent systems using n8n to automate workflows and repetitive business processes.
 - **AI Developer — Top Evolution Srl** (June 2025 – August 2025): Built AI automation projects, designing and optimizing machine learning pipelines and integrating models into real-world workflows.
 
