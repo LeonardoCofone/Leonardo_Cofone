@@ -11,7 +11,7 @@ const links = [
   },
   { 
     label: 'LinkedIn', 
-    url: 'https://www.linkedin.com/in/leonardo-cofone-914228361/', 
+    url: 'https://www.linkedin.com/in/leonardo-cofone/', 
     subtitle: 'My professional profile' 
   },
   { 

@@ -81,7 +81,7 @@
         "sameAs": [
           "https://github.com/LeonardoCofone",
           "https://www.kaggle.com/zlatan599",
-          "https://www.linkedin.com/in/leonardo-cofone-914228361/",
+          "https://www.linkedin.com/in/leonardo-cofone/",
           "https://www.instagram.com/leo.cofonee/"
         ]
       },
@@ -151,20 +151,28 @@
               <h3>WORK EXPERIENCES</h3>
               <ul>
 
-                <li>
+               <li>
                   <strong>Python Developer</strong> – Airpim Srl (June 2026, 1 month)<br>
-                  Designed and built a zero-dependency Python tool for automatic memory leak diagnostics, with adaptive statistical analysis and root-cause localization on the object graph. Validated in production.
+                  Designed and built a zero-dependency Python tool for automatic memory leak diagnostics.
+                  <br>
+                  The hard part was telling real leaks apart from normal allocation noise without fixed thresholds, so the tool adapts its statistics to the process it is watching. When it flags something, it walks the object graph to find what is actually holding the reference, instead of just reporting that memory is growing.
+                  <br>
+                  No external dependencies, so it drops into any codebase. Validated in production.
                 </li>
 
 
                 <li>
                   <strong>AI Developer</strong> – EgoLog S.r.l. (August 2025 – February 2026, 7 months)<br>
-                  Designed, developed, and deployed AI agent systems using n8n to automate workflows and repetitive business processes. Improved operational efficiency by integrating practical AI solutions into client systems.
+                  Built and deployed AI agent systems in n8n for social media management, data enrichment, and lead generation.
+                  <br>
+                  The work was end to end: understanding what the client actually needed automated, designing the agent workflows, integrating them with the systems already in place, and keeping them running once they were live.
                 </li>
 
                 <li>
-                  <strong>AI Developer</strong> – Top Evolution Srl (June 2025 – August 2025, 3 months)<br>
-                  Worked on AI automation projects for businesses, designing and optimizing machine learning pipelines and integrating models into real-world workflows to improve efficiency and performance.
+                  <strong>AI Developer</strong> – Top Evolutions Srl (June 2025 – August 2025, 3 months)<br>
+                  Worked on AI automation for businesses in the payments space, building prompt-driven systems that matched merchants with the payment provider that actually fit them.
+                  <br>
+                  Alongside that, automation work on lead generation. Early on I also trained models on the client's data, before the work shifted toward prompt engineering: getting the model to reason over real business constraints instead of producing plausible-sounding recommendations.
                 </li>
 
                 <li>
