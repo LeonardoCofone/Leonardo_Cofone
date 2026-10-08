@@ -17,20 +17,9 @@ const links = [
   { 
     label: 'Instagram', 
     url: 'https://www.instagram.com/leo.cofonee/', 
-    subtitle: 'Personal life' 
+    subtitle: 'Personal life'
   },
 ];
-
-function makeHostname(href) {
-  try { 
-    return new URL(href).hostname.replace('www.', ''); 
-  }
-  catch { 
-    return href.startsWith('mailto:') 
-      ? href.replace('mailto:', '') 
-      : href; 
-  }
-}
 
 const faviconMap = {
   GitHub: 'images/github.png',
@@ -66,6 +55,25 @@ function initGrid() {
 function setYear() {
   const y = document.getElementById('year');
   y.textContent = new Date().getFullYear();
+}
+
+// "Present" diventa "<mese fine> · N months" quando il mese indicato in data-end è finito
+function updateEndDates() {
+  const now = new Date();
+  document.querySelectorAll('[data-end]').forEach(el => {
+    const [ey, em] = el.dataset.end.split('-').map(Number);
+    if (now < new Date(ey, em, 1)) return;
+
+    el.textContent = new Date(ey, em - 1, 1).toLocaleString('en-US', { month: 'long', year: 'numeric' });
+    if (el.dataset.start) {
+      const [sy, sm] = el.dataset.start.split('-').map(Number);
+      const months = (ey - sy) * 12 + (em - sm) + 1;
+      const duration = document.createElement('span');
+      duration.className = 'job-duration';
+      duration.textContent = `${months} month${months === 1 ? '' : 's'}`;
+      (el.closest('.job-dates') || el).after(' · ', duration);
+    }
+  });
 }
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -106,6 +114,7 @@ function hackingText(id, speed = 80) {
 document.addEventListener("DOMContentLoaded", () => {
   initGrid();
   setYear();
+  updateEndDates();
 
   hackingText("hackingNameTitle", 100);
 

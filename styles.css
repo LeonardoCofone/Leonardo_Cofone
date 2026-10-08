@@ -2,6 +2,7 @@
   --bg: #0b0f14;
   --card: #0f141b;
   --text: #e6edf3;
+  --place: #c3ccd5;
   --muted: #aab8c5;
   --accent: #7aa2ff;
   --accent2: #09b6ff;
@@ -23,6 +24,7 @@
     --bg: #f7f9fc;
     --card: #ffffff;
     --text: #0b1220;
+    --place: #3f4044;
     --muted: #4b5565;
     --accent: #335cff;
     --accent2: #0899d6;
@@ -559,6 +561,23 @@ body {
   margin-bottom: 7px;
 }
 
+.job-meta {
+  display: block;
+  margin: 2px 0 6px;
+  color: var(--place);
+  font-size: 1em;
+}
+
+.job-dates {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.job-duration {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .contact-form-section {
   padding-top: 20px;
 }
@@ -656,6 +675,27 @@ form button[type='submit']:focus-visible {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+}
+
+.form-direct {
+  margin: -0.4rem 0 1.2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.form-direct a {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-direct a:hover {
+  text-decoration: underline;
 }
 
 .footer {
